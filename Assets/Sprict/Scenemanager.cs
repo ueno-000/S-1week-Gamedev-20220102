@@ -7,11 +7,8 @@ using DG.Tweening;
 
 public class Scenemanager : MonoBehaviour
 {
-    [Header("ExitPannelの貼り付け")]
-    [SerializeField] GameObject _exitPannel;
-    [Header("FadePannelの貼り付け")]
-    [Space(10)]
-    [SerializeField] Image _fadePannel;
+    [SerializeField, Header("ExitPannelの貼り付け")] GameObject _exitPannel;
+    [SerializeField, Header("FadePannelの貼り付け")] Image _fadePannel;
 
     private void Start()
     {
