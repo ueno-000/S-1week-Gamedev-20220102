@@ -36,6 +36,7 @@ public class Scenemanager : MonoBehaviour
 
     public void StartFadeIn()//フェードイン関数
     {
+        _fadePannel.gameObject.SetActive(true);
         _fadePannel.DOFade(endValue: 0f, duration: 1f).OnComplete(() => _fadePannel.gameObject.SetActive(false));
         //PannelのColorは黑に設定
     }
