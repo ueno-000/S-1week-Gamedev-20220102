@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //WASD取得
+
         float v = Input.GetAxisRaw("Vertical");
         float h = Input.GetAxisRaw("Horizontal");
         Vector2 dir = new Vector2(h, v);
